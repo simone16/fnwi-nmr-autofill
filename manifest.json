@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "FNWI-NMR-autofill",
+  "version": "1.0",
+  "author" : "Simone Pilon",
+
+  "description": "Automatically fill in form data for the NMR booking page of FNWI.",
+
+  "icons": {
+    "128": "icons/icon-128.png"
+  },
+
+  "permissions": ["storage"],
+	
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fnwi-nmr-autofill_self@simonepilon.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://hims.fnwi.uva.nl/nmr/NMR-Agenda-*"],
+      "js": ["autofill.js"]
+    }
+  ]
+
+}
