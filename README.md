@@ -12,3 +12,4 @@ Stores the data you have to fill in everytime you book the NMR via the webpage.
 
 On the nmr booking pages, a new 'save' button should be visible. Fill in all your data and click the save button.
 Next time you load the page, the data will be filled automagically.
+
